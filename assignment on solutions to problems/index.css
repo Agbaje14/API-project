@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(38, 139, 67);
+    height: 80px;
+    padding: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+
+.logo{
+    margin-top: -25px;
+}
+
+.navi{
+    list-style: none;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+    position: sticky;
+}
+
+.navi li{
+    margin-left: 50px;
+}
+
+.nav, li:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.nav, img:hover{
+    filter: brightness(87%);
+    cursor: pointer;
+}
+
+.nav, a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav, a:hover{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+.apply{
+    background: linear-gradient(to right, rgb(57, 152, 36), rgb(30, 120, 70));
+    height: 300px;
+    width: 270px;
+    margin-left: 100px;
+    border-radius: 20px;
+    animation: aaa 1.5s ease-in-out;
+    padding: 12px;
+    color: white;
+    
+}
+
+@keyframes aaa {
+    from{
+        opacity: 30%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+    0%{
+        visibility: hidden;
+        transform: translateX(-50%);
+    }
+
+    10%{
+        visibility: collapse;
+    }
+
+    100%{
+        transform: translateX(0%);
+    }
+
+}
+
+#apply{
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(43, 144, 178);
+    border: none;
+    border-radius: 15px;
+    margin-top: -9px;
+    margin-left: 50px;
+}
+
+#apply:hover{
+    cursor: pointer;
+    background-color: rgb(33, 130, 163);
+}
+
+.services{
+    display: none;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    color: black;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    margin-left: 650px;
+    box-shadow: 9px 8px 14px 0px
+    rgba(0,0,0,0.2);
+    margin-top: -20px;
+}
+
+.services ul{
+    margin-top: 13px;
+}
+
+.services li{
+    list-style: none;
+    display: block;
+}
+
+.services a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 12px 16px;
+
+}
+
+.services a:hover{
+    background-color: #ddd;
+    transition: 0.4s;   
+}
+
+.show{display: block;}
+

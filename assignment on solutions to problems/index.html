@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="bod">
+    <div class="parent">
+        <nav>
+            <img src="./images/nis-logo.png" alt="" height="80px" width="80px" class="logo">
+            <h1 style="margin-left:20px; margin-top: -12px;">Enugu Nigerian <br> Passport Service</h1>
+            <b>
+                <ul class="navi">
+                    <li style="color: white;"><a href="index.html">Home</a></li>
+                    <li>About Us</li>
+                    <li class="se">Services</li>
+                    <img src="./images/icons8-sort-down-48 (1).png" alt="" height="15px" width="15px" style="margin-top: 3px;" onclick="dropdown()">
+                    <li>Contact Us</li>
+                </ul>
+            </b>
+            <img src="./images/Facebook-logo.png" alt="" height="30px" width="50px" style="margin-left: 250px;">
+            <img src="./images/twitter-logo-vector-png-clipart-1.png" alt="" height="30px" width="30px" style="margin-left: 20px; margin-top: 3px;">
+            <img src="./images/174855.png" alt="" height="25px" width="25px" style="margin-left: 25px; margin-top: 3px;">
+        </nav>
+        <div id="serve" class="services">
+            <ul>
+                <li><a href="./new.html">Apply for Passport</a></li>
+                <li><a href="./resume.html">Resume/Edit Application</a></li>
+                <li><a href="">Correction of Data</a></li>
+                <li><a href="">Book Appointment</a></li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        <div class="apply" style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            <h1>Apply for a Passport</h1>
+            <br>
+            <p style="line-height: 27px; color: rgb(255, 255, 255);">You can now apply for a passport online.  The online application process <br> is simple and easy to use.</p>
+            <br>
+            <div style="display: flex;">
+                <a href="" style="color: white;">Learn More</a>
+                <a href="./apply.html"><button id="apply">Apply Now</button></a>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        services = document.getElementById("serve")
+
+        // document.querySelector(".bod").addEventListener(
+        //     "click", function (){
+        //         serve.style.display = "none"
+        //     }
+        // )
+        document.querySelector(".se").addEventListener(
+            "click", function(){
+                serve.style.display = "block"
+                if (window.onclick === true) {
+                    serve.style.display = "none"
+                }
+            }
+        )
+    </script>
+</body>
+</html> 
